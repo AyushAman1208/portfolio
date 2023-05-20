@@ -1,0 +1,11 @@
+{% extends "main/index.html" %} {% block content %}
+<nav class="bg-blue-300 flex">
+    <ul class="flex space-x-10">
+      <li class="text-2xl"><a href="{% url 'home' %}">Portfolio</a></li>
+      <li><a href="{% url 'projects' %}">Projects</a></li>
+      <li><a href="{% url 'certifications' %}">Certifications</a></li>
+      <li><a href="{% url 'achievements' %}">Achievements</a></li>
+    </ul>
+  </nav>
+These are my Certifications
+{% endblock content %}

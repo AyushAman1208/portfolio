@@ -1,0 +1,24 @@
+{% extends "main/index.html" %} {% block content %}
+
+<nav class="bg-blue-300 flex">
+  <ul class="flex space-x-10">
+    <li class="text-2xl"><a href="{% url 'home' %}">Portfolio</a></li>
+    <li><a href="{% url 'projects' %}">Projects</a></li>
+    <li><a href="{% url 'certifications' %}">Certifications</a></li>
+    <li><a href="{% url 'achievements' %}">Achievements</a></li>
+  </ul>
+</nav>
+
+<div class="flex space-x-10 justify-center">
+  <div class="bg-yellow-300">
+    <img src="templates/main/myImage.png" alt="my image">
+    <p class="text-3xl font-bold font-sans">Ayush Aman</p>
+    <a href="www.linkedin.com/in/ayush-aman-">LinkedIn</a>
+    <a href="https://github.com/AyushAman1208">GitHub</a>
+  </div>
+  <div class="flex flex-col bg-yellow-600">
+    <div><h1>About me</h1></div>
+    <div><p>Ayush is the sexiest man alive.</p></div>
+  </div>
+</div>
+{% endblock content %}
