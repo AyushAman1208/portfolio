@@ -1,0 +1,20 @@
+[
+  {
+    "jobTitle": "Software Engineer",
+    "company": "Broadridge Financial Solutions",
+    "joined": "2022",
+    "ended": "2024",
+    "location": "Hyderabad, India",
+    "description": "Worked on full-stack financial applications, improving automation and data analytics pipelines.",
+    "relevantSkills": ["Java", "Node.js", "React"]
+  },
+  {
+    "jobTitle": "Research Assistant",
+    "company": "University College London",
+    "joined": "2024",
+    "ended": "Present",
+    "location": "London, UK",
+    "description": "Researching multi-agent coordination and swarm robotics with reinforcement learning.",
+    "relevantSkills": ["ROS2", "Python", "AI"]
+  }
+]

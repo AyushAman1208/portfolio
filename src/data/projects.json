@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Autonomous Drone Swarm Navigation",
+    "description": "Developed a decentralized drone swarm that can navigate through complex environments using Boid algorithms in ROS 2.",
+    "skills": ["ROS2", "Python", "AI", "Robotics"],
+    "tags": ["AI", "Robotics"]
+  },
+  {
+    "title": "AI-Powered Expense Tracker",
+    "description": "Created an intelligent system that classifies transactions using OCR and NLP.",
+    "skills": ["FastAPI", "NLP", "Next.js"],
+    "tags": ["AI", "Web Development"]
+  }
+]
