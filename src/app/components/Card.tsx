@@ -11,7 +11,7 @@ interface MetadataItem {
 interface CardProps {
   title: string;
   footer?: string;
-  metadataDict: any
+  metadataDict: { [key: string]: string };
 }
 
 export default function Card({ title, footer, metadataDict }: CardProps) {
