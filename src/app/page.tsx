@@ -10,7 +10,7 @@ export default function HomePage() {
     <div className="space-y-12">
       {/* Row 1: Bio */}
       <div className="flex flex-col md:flex-row items-center gap-8">
-        <Image src="/profile.jpg" alt="Ayush Aman" width={200} height={200} className="rounded-full shadow-md" />
+        <Image src="https://drive.google.com/file/d/10u0J4ZiFQaXAxduj3WagXqhXSUbRK58K/view?usp=sharing" alt="Ayush Aman" width={200} height={200} className="rounded-full shadow-md" />
         <div>
           <h1 className="text-3xl font-bold text-blue-600">Ayush Aman</h1>
           <p className="mt-2 text-lg text-gray-700">
@@ -19,6 +19,7 @@ export default function HomePage() {
           </p>
         </div>
       </div>
+      <h1 className="text-3xl font-bold text-red-600"> This website is currently under development, Please come back later.</h1>
 
       {/* Row 2: Best Project */}
       <div>
@@ -26,18 +27,18 @@ export default function HomePage() {
         <div className="bg-white p-6 rounded-2xl shadow-md">
           <h3 className="text-xl font-bold text-blue-600">{bestProject.title}</h3>
           <p className="mt-2 text-gray-700">{bestProject.description}</p>
-          <p className="text-sm text-gray-500 mt-2">Skills: {bestProject.skills.join(", ")}</p>
+          <p className="text-sm text-gray-500 mt-2">{bestProject.TechStack.join(", ")}</p>
         </div>
       </div>
 
       {/* Row 3: Current Job */}
       <div>
         <h2 className="text-2xl font-semibold mb-4">Current Job</h2>
-        <div className="bg-white p-6 rounded-2xl shadow-md">
+        {currentJob && (<div className="bg-white p-6 rounded-2xl shadow-md">
           <h3 className="text-xl font-bold text-blue-600">{currentJob.jobTitle}</h3>
           <p className="text-gray-600">{currentJob.company} — {currentJob.location}</p>
           <p className="mt-2 text-gray-700">{currentJob.description}</p>
-        </div>
+        </div>)}
       </div>
     </div>
   );

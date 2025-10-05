@@ -1,14 +1,34 @@
 [
   {
-    "title": "Autonomous Drone Swarm Navigation",
-    "description": "Developed a decentralized drone swarm that can navigate through complex environments using Boid algorithms in ROS 2.",
-    "skills": ["ROS2", "Python", "AI", "Robotics"],
-    "tags": ["AI", "Robotics"]
+    "title": "Word - Mate",
+    "description": "A full-stack game connecting people with a love for words. Built using Nodejs, Nextjs and socket.io.",
+    "TechStack": ["Node,js"," Next.js", "Websockets", "Tailwind CSS"],
+    "url": "https://wordmate-nu.vercel.app/",
+    "tags": ["Full-Stack Web Development"]
   },
   {
-    "title": "AI-Powered Expense Tracker",
-    "description": "Created an intelligent system that classifies transactions using OCR and NLP.",
-    "skills": ["FastAPI", "NLP", "Next.js"],
-    "tags": ["AI", "Web Development"]
+    "title": "Traffic Signal Classifier",
+    "description": "A Deep Learning model built using Tensorflow which can identify traffic signals.",
+    "TechStack": ["Tensorflow", "Keras", "scikit learn", "numpy", "pandas", "matplotlib", "seaborn"],
+    "url": "https://colab.research.google.com/drive/1NAmVJFPmKZo1iEr9bM8bsm_qOpcLNv15",
+    "tags": ["Machine Learning", "Deep Learning"]
+  },
+  {
+    "title": "Meet-up app",
+    "description": "A basic application to add and view meetups with applications of React contexts",
+    "TechStack": ["React", "Firebase"],
+    "tags": ["Frontend Web Development"]
+  },
+  {
+    "title": "Spam Classifier",
+    "description": "A Deep learning model which classifies emails as spam or ham using Tensorflow to build the model, nltk for language processing and matplotlib and seaborn for data visualization",
+    "TechStack": ["Tensorflow", "Keras", "scikit learn", "numpy", "pandas", "matplotlib", "seaborn"],
+    "tags": ["Machine Learning", "Deep Learning"]
+  },
+  {
+    "title": "Rotation period estimator",
+    "description": "A coursework of the Computer Vision module in the Robotics and AI programme aimed at measuring the rotation period of an astronomical object using only vision techniques.",
+    "TechStack": [""],
+    "tags": ["Machine Learning", "Deep Learning"]
   }
 ]
