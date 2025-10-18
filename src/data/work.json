@@ -1,20 +1,52 @@
 [
   {
-    "jobTitle": "Software Engineer",
-    "company": "Broadridge Financial Solutions",
-    "joined": "2022",
-    "ended": "2024",
-    "location": "Hyderabad, India",
-    "description": "Worked on full-stack financial applications, improving automation and data analytics pipelines.",
-    "relevantSkills": ["Java", "Node.js", "React"]
+    "jobTitle": "Senior Project Lead - AI Engineer",
+    "company": "Intellect AI",
+    "jobType": "Full-time",
+    "joined": "October 2025",
+    "ended": "Current Job",
+    "location": "London, UK",
+    "description": "Working on automating regulatory compliance for retail banks using agentic AI and Purple Fabric, Intellect's agentic AI platform",
+    "tags": ["Agentic AI"]
   },
   {
-    "jobTitle": "Research Assistant",
-    "company": "University College London",
-    "joined": "2024",
-    "ended": "Present",
+    "jobTitle": "AI Commercialisation Intern",
+    "company": "Intellect AI",
+    "job type": "Internship",
+    "joined": "July 2025",
+    "ended": "September 2025",
     "location": "London, UK",
-    "description": "Researching multi-agent coordination and swarm robotics with reinforcement learning.",
-    "relevantSkills": ["ROS2", "Python", "AI"]
+    "description": "Delivered a fraud detection and triaging solution on the Purple Fabric, Intellect's agentic AI platform, within two weeks, which has already been demoed to 7 clients. Used agentic AI to speed up operational processes for retail banking clients.",
+    "tags": ["Agentic AI"]
+  },
+  {
+    "jobTitle": "Member Technical",
+    "company": "Broadridge Financial Solutions",
+    "job type": "Full-time",
+    "joined": "July 2023",
+    "ended": "August 2024",
+    "location": "Bangalore, India",
+    "description": "Co-created ClearFi, contributing to 50% of frontend (Nextjs) and around 10% of backend (Node js and GraphQL) code which is now live. Improved product strategy and planning process for PMs by creating a dashboard in two days, using webhooks(JavaScript) and Looker Studio for analyzing feedback and product usage data. Improved data entry process for the BAs by more than 300% by creating an in-house Content Management System using Nextjs within 5 weeks.",
+    "tags": ["JavaScript", "React.js", "Next.js","Node.js", "Full-stack Web Development"]
+  },{
+    "jobTitle": "Member Technical Intern",
+    "company": "Broadridge Financial Solutions",
+    "job type": "Full-time",
+    "joined": "January 2023",
+    "ended": "June 2024",
+    "location": "Bangalore, India",
+    "description": "Created a blockchain POC using DAML after learning it within 1 month.",
+    "tags": ["Blockchain", "DAML"]
+  },{
+    "jobTitle": "Technical Content Writer",
+    "company": "DataFlair",
+    "job type": "Internship",
+    "joined": "December 2021",
+    "ended": "January 2022",
+    "location": "Remote",
+    "description": "Wrote 23 educational articles in one month on topics related to PyTorch for publishing on the company website. Built deep learning models using MNIST, FashionMNIST and CIFAR datasets.",
+    "tags": ["Machine Learning", "Deep Learning", "Pytorch", "Neural Networks"]
   }
+
+
 ]
