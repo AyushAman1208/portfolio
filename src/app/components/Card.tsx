@@ -125,7 +125,7 @@ export default function Card({ title, description, footer, metadataDict, url }: 
               <span className="font-medium text-gray-700 dark:text-gray-300 md:w-32 capitalize text-sm flex-shrink-0">
                 {label.replace(/([A-Z])/g, ' $1').trim()}:
               </span>
-              <div className="flex-1">{renderValue(value as any)}</div>
+              <div className="flex-1">{renderValue(value as string)}</div>
             </div>
           ))}
         </div>

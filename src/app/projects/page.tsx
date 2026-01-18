@@ -1,4 +1,4 @@
-import Card, { MetadataDict } from "../components/Card";
+import  { MetadataDict } from "../components/Card";
 import projectsData from "../../data/projects.json";
 import ProjectsFilter from "./ProjectsFilter";
 
