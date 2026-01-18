@@ -15,19 +15,26 @@ interface Work extends MetadataDict{
 
 const works = workData as Work[];
 
-export default function ProjectsPage() {
+export default function WorkExperiencePage() {
   return (
     <div>
-      <h1 className="text-3xl font-bold mb-6">Work Experience</h1>
+      <div className="mb-12">
+        <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-3">Work Experience</h1>
+        <p className="text-lg text-gray-600 dark:text-gray-400">My professional journey in robotics, AI, and software engineering</p>
+        <div className="h-1 w-32 bg-gradient-to-r from-blue-600 to-transparent rounded-full mt-4"></div>
+      </div>
 
-      {works.map((p, i) => (
-        <Card
-          key={i}
-          title={p.jobTitle}
-          metadataDict={p}
-          footer={p.tags?.length ? p.tags.join(", ") : ""}
-        />
-      ))}
+      <div className="space-y-4">
+        {works.map((p, i) => (
+          <Card
+            key={i}
+            title={p.jobTitle}
+            description={p.company}
+            metadataDict={p}
+            footer={p.tags?.length ? p.tags.join(", ") : ""}
+          />
+        ))}
+      </div>
     </div>
   );
 }
