@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import { FiExternalLink } from "react-icons/fi";
+import MarkdownRenderer from "./MarkdownRenderer";
 
 // A flexible dictionary type for metadata
 export interface MetadataDict {
@@ -14,6 +15,7 @@ export interface CardProps {
   footer?: string;
   metadataDict?: MetadataDict;
   url?: string;
+  institution?: string;
 }
 
 const isUrl = (str: string): boolean => {
@@ -45,7 +47,8 @@ const renderValue = (value: string | string[]): React.ReactNode => {
           }
           return (
             <span key={idx} className="px-3 py-1 bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium">
-              {item}
+              {/* {item} */}
+              <MarkdownRenderer content={item} />
             </span>
           );
         })}
@@ -66,20 +69,20 @@ const renderValue = (value: string | string[]): React.ReactNode => {
     );
   }
 
-  return <span className="text-gray-600 dark:text-gray-400 break-words text-sm">{value}</span>;
+  return <span className="text-gray-600 dark:text-gray-400 break-words text-sm"><MarkdownRenderer content={value}/></span>;
 };
 
-export default function Card({ title, description, footer, metadataDict, url }: CardProps) {
+export default function Card({ title, footer, metadataDict, url,institution }: CardProps) {
   const [open, setOpen] = useState(false);
 
   // Convert metadataDict into a uniform list for rendering, excluding title, description, and url
   const metadata = metadataDict
     ? Object.entries(metadataDict)
-        .filter(([key]) => !["title", "description", "url"].includes(key.toLowerCase()))
-        .map(([key, value]) => ({
-          label: key,
-          value: Array.isArray(value) ? value : value,
-        }))
+      .filter(([key]) => !["title","institution", "url", "logo"].includes(key.toLowerCase()))
+      .map(([key, value]) => ({
+        label: key,
+        value: Array.isArray(value) ? value : value,
+      }))
     : [];
 
   return (
@@ -91,7 +94,20 @@ export default function Card({ title, description, footer, metadataDict, url }: 
       >
         <div className="flex-1">
           <h3 className="text-lg font-semibold bg-gradient-to-r from-blue-600 to-blue-500 dark:from-blue-400 dark:to-blue-300 bg-clip-text text-transparent">{title}</h3>
-          {description && <p className="text-gray-600 dark:text-gray-400 mt-2 text-sm leading-relaxed">{description}</p>}
+          {institution && (
+            <div className="flex items-start gap-3 mt-2">
+              {metadataDict?.logo && (
+                <img
+                  src={metadataDict.logo as string}
+                  alt={``}
+                  className="w-8 h-8 object-contain rounded-md flex-shrink-0"
+                />
+              )}
+              <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                {institution}
+              </p>
+            </div>
+          )}
         </div>
         <div className="text-blue-600 dark:text-blue-400 transition-transform duration-300 ml-4 flex-shrink-0">
           {open ? <FiChevronUp size={22} /> : <FiChevronDown size={22} />}
@@ -107,7 +123,7 @@ export default function Card({ title, description, footer, metadataDict, url }: 
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block mt-3 p-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all shadow-md hover:shadow-lg flex items-center justify-center"
+          className="inline-block mt-3 p-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all shadow-md hover:shadow-lg items-center justify-center"
           title="Open link"
         >
           <FiExternalLink size={18} />
@@ -120,9 +136,11 @@ export default function Card({ title, description, footer, metadataDict, url }: 
           {metadata.map(({ label, value }, idx) => (
             <div
               key={idx}
-              className="flex flex-col md:flex-row md:items-start gap-2"
+              className="flex flex-col md:grid md:grid-cols-[8rem_1fr] gap-2"
             >
-              <span className="font-medium text-gray-700 dark:text-gray-300 md:w-32 capitalize text-sm flex-shrink-0">
+
+              <span className="font-medium text-gray-700 dark:text-gray-300 capitalize text-sm">
+
                 {label.replace(/([A-Z])/g, ' $1').trim()}:
               </span>
               <div className="flex-1">{renderValue(value as string)}</div>

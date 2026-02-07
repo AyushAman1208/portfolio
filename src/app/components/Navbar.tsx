@@ -17,6 +17,7 @@ const Navbar = () => {
           <li><Link href="/" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Home</Link></li>
           <li><Link href="/projects" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Projects</Link></li>
           <li><Link href="/work-experience" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Work Experience</Link></li>
+          <li><Link href="/education" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Education</Link></li>
         </ul>
 
         <button className="md:hidden text-gray-700 dark:text-gray-300" onClick={() => setOpen(!open)}>
@@ -30,6 +31,8 @@ const Navbar = () => {
             <li><Link href="/" onClick={() => setOpen(false)} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Home</Link></li>
             <li><Link href="/projects" onClick={() => setOpen(false)} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Projects</Link></li>
             <li><Link href="/work-experience" onClick={() => setOpen(false)} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Work Experience</Link></li>
+            <li><Link href="/education" onClick={() => setOpen(false)} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Education</Link></li>
+          
           </ul>
         </div>
       )}

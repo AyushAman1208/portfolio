@@ -29,7 +29,8 @@ export default function WorkExperiencePage() {
           <Card
             key={i}
             title={p.jobTitle}
-            description={p.company}
+            description={p.description}
+            institution={p.company}
             metadataDict={p}
             footer={p.tags?.length ? p.tags.join(", ") : ""}
           />

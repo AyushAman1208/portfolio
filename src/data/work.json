@@ -1,13 +1,14 @@
 [
   {
     "jobTitle": "Senior Project Lead - AI Engineer",
-    "company": "Intellect AI",
+    "company": "Intellect Design Arena",
     "jobType": "Full-time",
     "joined": "October 2025",
     "ended": "Current Job",
     "location": "London, UK",
-    "description": "Working on automating regulatory compliance for retail banks using agentic AI and Purple Fabric, Intellect's agentic AI platform",
-    "tags": ["Agentic AI"]
+    "description": "- Working on **automating regulatory compliance** for retail banks\n- Leveraging **agentic AI** and **Purple Fabric**, Intellect’s agentic AI platform",
+    "tags": ["Agentic AI"],
+    "logo": "/companies_logo/intellectLogo.png"
   },
   {
     "jobTitle": "AI Commercialisation Intern",
@@ -16,8 +17,9 @@
     "joined": "July 2025",
     "ended": "September 2025",
     "location": "London, UK",
-    "description": "Delivered a fraud detection and triaging solution on the Purple Fabric, Intellect's agentic AI platform, within two weeks, which has already been demoed to 7 clients. Used agentic AI to speed up operational processes for retail banking clients.",
-    "tags": ["Agentic AI"]
+    "description": "- Delivered a **fraud detection and triaging solution** on **Purple Fabric** within **two weeks**\n- Solution has already been **demoed to 7 clients**\n- Used **agentic AI** to speed up operational processes for **retail banking clients**",
+    "tags": ["Agentic AI"],
+    "logo": "/companies_logo/intellectLogo.png"
   },
   {
     "jobTitle": "Member Technical",
@@ -26,27 +28,30 @@
     "joined": "July 2023",
     "ended": "August 2024",
     "location": "Bangalore, India",
-    "description": "Co-created ClearFi, contributing to 50% of frontend (Nextjs) and around 10% of backend (Node js and GraphQL) code which is now live. Improved product strategy and planning process for PMs by creating a dashboard in two days, using webhooks(JavaScript) and Looker Studio for analyzing feedback and product usage data. Improved data entry process for the BAs by more than 300% by creating an in-house Content Management System using Nextjs within 5 weeks.",
-    "tags": ["JavaScript", "React.js", "Next.js","Node.js", "Full-stack Web Development"]
-  },{
+    "description": "- Co-created **ClearFi**, contributing:\n  - **50% of frontend** using **Next.js**\n  - ~**10% of backend** using **Node.js** and **GraphQL**\n- Improved **product strategy and planning** for PMs by building a dashboard in **2 days** using **webhooks (JavaScript)** and **Looker Studio**\n- Increased **data entry efficiency for BAs by 300%+** by creating an in-house **CMS using Next.js** within **5 weeks**",
+    "tags": ["JavaScript", "React.js", "Next.js", "Node.js", "Full-stack Web Development"],
+    "logo": "/companies_logo/BRlogo.png"
+  },
+  {
     "jobTitle": "Member Technical Intern",
     "company": "Broadridge Financial Solutions",
     "job type": "Full-time",
     "joined": "January 2023",
     "ended": "June 2024",
     "location": "Bangalore, India",
-    "description": "Created a blockchain POC using DAML after learning it within 1 month.",
-    "tags": ["Blockchain", "DAML"]
-  },{
+    "description": "- Created a **blockchain POC** using **DAML**\n- Learned and delivered the solution within **1 month**",
+    "tags": ["Blockchain", "DAML"],
+    "logo": "/companies_logo/BRlogo.png"
+  },
+  {
     "jobTitle": "Technical Content Writer",
     "company": "DataFlair",
     "job type": "Internship",
     "joined": "December 2021",
     "ended": "January 2022",
     "location": "Remote",
-    "description": "Wrote 23 educational articles in one month on topics related to PyTorch for publishing on the company website. Built deep learning models using MNIST, FashionMNIST and CIFAR datasets.",
-    "tags": ["Machine Learning", "Deep Learning", "Pytorch", "Neural Networks"]
+    "description": "- Wrote **23 educational articles** in one month on **PyTorch-related topics**\n- Articles published on the **company website**\n- Built **deep learning models** using:\n  - MNIST\n  - FashionMNIST\n  - CIFAR datasets",
+    "tags": ["Machine Learning", "Deep Learning", "Pytorch", "Neural Networks"],
+    "logo": "/companies_logo/DataFlairLogo.png"
   }
-
-
 ]
