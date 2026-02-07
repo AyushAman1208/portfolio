@@ -1,32 +1,32 @@
 [
-    {
-        "course": "MSc Robotics and Artificial Intelligence",
-        "institution": "University College London",
-        "location": "London, UK",
-        "startDate": "September 2024",
-        "endDate": "September 2025",
-        "description": "Specialized in Robotics and AI, covering topics such as robot kinematics, dynamics, control, computer vision, machine learning, and deep learning. Completed projects on drone trajectory planning and robot manipulator control.",
-        "tags": ["Robotics", "Artificial Intelligence", "Machine Learning"],
-        "logo": "/education_logo/UCLLogo.png"
-    },
-    {
-        "course": "B.Tech Electrical Engineering",
-        "institution": "National Institute of Technology Jamshedpur",
-        "location": "Jamshedpur, India",
-        "startDate": "August 2019",
-        "endDate": "May 2023",
-        "description": "",
-        "tags": ["Electrical Engineering", "Computer Science", "Machine Learning"],
-        "logo": "/education_logo/NITJsrLogo.png"
-    },
-    {
-        "course": "Higher Secondary Education",
-        "institution": "International School CBSE, Patna",
-        "location": "Patna, India",
-        "startDate": "April 2017",
-        "endDate": "March 2019",
-        "description": "Overall percentage: 84.5%.",
-        "tags": ["Physics", "Mathematics", "Chemistry", "English", "Physical Education"],
-        "logo": ""
-    }
+  {
+    "course": "MSc Robotics and Artificial Intelligence",
+    "institution": "University College London",
+    "location": "London, UK",
+    "startDate": "September 2024",
+    "endDate": "September 2025",
+    "description": "- Specialized in **Robotics and Artificial Intelligence**\n- Core topics covered:\n  - Robot kinematics, dynamics, and control\n  - Computer vision\n  - Machine learning and deep learning\n- Completed academic projects including:\n  - **Drone trajectory planning**\n  - **Robot manipulator control**",
+    "tags": ["Robotics", "Artificial Intelligence", "Machine Learning"],
+    "logo": "/education_logo/UCLLogo.png"
+  },
+  {
+    "course": "B.Tech Electrical Engineering",
+    "institution": "National Institute of Technology Jamshedpur",
+    "location": "Jamshedpur, India",
+    "startDate": "August 2019",
+    "endDate": "May 2023",
+    "description": "- Undergraduate degree in **Electrical Engineering**\n- Strong interdisciplinary exposure to:\n  - **Computer Science fundamentals**\n  - **Machine Learning concepts**",
+    "tags": ["Electrical Engineering", "Computer Science", "Machine Learning"],
+    "logo": "/education_logo/NITJsrLogo.png"
+  },
+  {
+    "course": "Higher Secondary Education",
+    "institution": "International School CBSE, Patna",
+    "location": "Patna, India",
+    "startDate": "April 2017",
+    "endDate": "March 2019",
+    "description": "- Achieved an **overall percentage of 84.5%**",
+    "tags": ["Physics", "Mathematics", "Chemistry", "English", "Physical Education"],
+    "logo": ""
+  }
 ]
