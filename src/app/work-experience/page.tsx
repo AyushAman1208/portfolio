@@ -23,7 +23,7 @@ export default function WorkExperiencePage() {
           Work Experience
         </h1>
         <p className="text-lg text-gray-600 dark:text-gray-400">
-          My professional journey in robotics, AI, and software engineering
+          My professional journey so far
         </p>
         <div className="h-1 w-32 bg-gradient-to-r from-blue-600 to-transparent rounded-full mt-4"></div>
       </div>

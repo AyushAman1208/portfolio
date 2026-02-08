@@ -37,7 +37,7 @@ export default function ProjectsPage() {
           Projects
         </h1>
         <p className="text-lg text-gray-600 dark:text-gray-400">
-          A selection of my recent robotics and AI projects
+          A selection of my projects showcasing my skills and experience in software development, AI, and robotics.
         </p>
         <div className="h-1 w-32 bg-gradient-to-r from-blue-600 to-transparent rounded-full mt-4"></div>
       </div>
