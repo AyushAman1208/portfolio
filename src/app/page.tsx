@@ -1,6 +1,7 @@
 import Image from "next/image";
 import projects from "../data/projects.json";
 import work from "../data/work.json";
+import MarkdownRenderer from "./components/MarkdownRenderer";
 
 export default function HomePage() {
   const bestProject = projects[0];
@@ -31,10 +32,10 @@ export default function HomePage() {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed max-w-2xl">
-              Robotics and AI Engineer passionate about building intelligent
-              systems and AI-driven solutions for real-world challenges. Located
-              in London with expertise in robotics, machine learning, and
-              full-stack development.
+              Software Engineer building scalable, reliable systems with a
+              strong focus on engineering rigor and real-world impact. Based in
+              London, with experience across backend and full-stack development,
+              and applied machine learning.
             </p>
             <div className="flex gap-4 mt-6">
               <a
@@ -67,9 +68,9 @@ export default function HomePage() {
           <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent mb-3">
             {bestProject.title}
           </h3>
-          <p className="text-gray-700 dark:text-gray-300 text-lg mb-4 leading-relaxed">
-            {bestProject.description}
-          </p>
+          <div className="text-gray-700 dark:text-gray-300 text-lg mb-4 leading-relaxed">
+            <MarkdownRenderer content={bestProject.description} />
+          </div>
           <div className="flex flex-wrap gap-2">
             {bestProject.tags?.map((tag, idx) => (
               <span
@@ -110,9 +111,9 @@ export default function HomePage() {
             <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">
               📍 {currentJob.location}
             </p>
-            <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
-              {currentJob.description}
-            </p>
+            <div className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
+              <MarkdownRenderer content={currentJob.description} />
+            </div>
           </div>
         )}
       </div>
