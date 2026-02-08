@@ -1,0 +1,16 @@
+[
+  {
+    "topic": "PyTorch",
+    "description": "- Created this blog series while working at **DataFlair**\n- The series focuses on **introductory PyTorch concepts** and hands-on demo projects\n- Published on the **DataFlair website**\n- Topics covered include:\n  - PyTorch fundamentals\n  - Building neural networks\n  - Implementing deep learning models",
+    "tags": ["PyTorch", "Deep Learning", "Neural Networks"],
+    "link": "https://data-flair.training/blogs/pytorch-tutorials-home/",
+    "thumbnail": "/content/pytorch_thumbnail.jpg"
+  },
+  {
+    "topic": "LLMs for non-techies",
+    "description": "This is my YouTube playlist where I explain the concepts of LLMs in a simple and easy-to-understand way.\nI cover topics like:\n- What are LLMs?\n- How do they work?\n- Applications of LLMs\n- Future of LLMs\nThis is still in production, and I will be adding more videos to the playlist in the future.",
+    "tags": ["LLMs", "Artificial Intelligence", "Machine Learning"],
+    "link": "https://youtube.com/playlist?list=PLIoPELBr8FdjzWItMSETWuwPRuYwFd3om&si=5kVsmRsAmWEqBAW5",
+    "thumbnail": "/content/llmYTPlaylist_logo.jpeg"
+  }
+]

@@ -37,9 +37,7 @@ export default function EducationPage() {
             institution={e.institution}
             metadataDict={e}
             footer={
-              e.startDate && e.endDate
-                ? `${e.startDate} – ${e.endDate}`
-                : ""
+              e.startDate && e.endDate ? `${e.startDate} – ${e.endDate}` : ""
             }
           />
         ))}

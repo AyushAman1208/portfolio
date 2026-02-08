@@ -29,7 +29,13 @@
     "ended": "August 2024",
     "location": "Bangalore, India",
     "description": "- Co-created **ClearFi**, contributing:\n  - **50% of frontend** using **Next.js**\n  - ~**10% of backend** using **Node.js** and **GraphQL**\n- Improved **product strategy and planning** for PMs by building a dashboard in **2 days** using **webhooks (JavaScript)** and **Looker Studio**\n- Increased **data entry efficiency for BAs by 300%+** by creating an in-house **CMS using Next.js** within **5 weeks**",
-    "tags": ["JavaScript", "React.js", "Next.js", "Node.js", "Full-stack Web Development"],
+    "tags": [
+      "JavaScript",
+      "React.js",
+      "Next.js",
+      "Node.js",
+      "Full-stack Web Development"
+    ],
     "logo": "/companies_logo/BRlogo.png"
   },
   {

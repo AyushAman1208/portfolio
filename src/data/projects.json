@@ -2,20 +2,43 @@
   {
     "title": "Word - Mate",
     "description": "An escape from the real world. Built for logophiles. Just follow the link, enter your name and hit Start Game to create or join a game room. If you don't get paired, then probably there are no other players online at the moment. Login from a different device or share the link with your friends to play together!",
-    "TechStack": ["Node,js"," Next.js", "Websockets", "Tailwind CSS", "Express.js" ],
+    "TechStack": [
+      "Node,js",
+      " Next.js",
+      "Websockets",
+      "Tailwind CSS",
+      "Express.js"
+    ],
     "url": "https://wordmate-nu.vercel.app/",
     "tags": ["Full-Stack Web Development"]
   },
   {
     "title": "LLM generated Behaviour Tree for robotic mission planning",
     "description": "This was a research work as part of my master's degree. I tried to leverage the capabilities of large language models (LLMs) to generate behaviour trees for autonomous robotic systems. The generated behaviour trees were then validated in simulation environments to assess their effectiveness in robotic mission planning tasks. The project aimed to explore the potential of LLMs in enhancing the decision-making processes of autonomous systems through structured behaviour representations. ",
-    "tags": ["Machine Learning", "GenAI", "Robotics", "Behavior Trees", "LLMs", "Autonomous Systems", "Robotic Mission Planning","Research"],
+    "tags": [
+      "Machine Learning",
+      "GenAI",
+      "Robotics",
+      "Behavior Trees",
+      "LLMs",
+      "Autonomous Systems",
+      "Robotic Mission Planning",
+      "Research"
+    ],
     "url": "https://drive.google.com/file/d/1z53IXTxKQRpQK6YuVse6kwjzxgrRHqKl/view?usp=sharing"
   },
   {
     "title": "Traffic Signal Classifier",
     "description": "A Deep Learning model built using Tensorflow which can identify traffic signals. This is a pretty basic model which I built to learn tensorflow and Keras. ",
-    "TechStack": ["Tensorflow", "Keras", "scikit learn", "numpy", "pandas", "matplotlib", "seaborn"],
+    "TechStack": [
+      "Tensorflow",
+      "Keras",
+      "scikit learn",
+      "numpy",
+      "pandas",
+      "matplotlib",
+      "seaborn"
+    ],
     "url": "https://colab.research.google.com/drive/1NAmVJFPmKZo1iEr9bM8bsm_qOpcLNv15",
     "tags": ["Machine Learning", "Deep Learning"]
   },
@@ -28,7 +51,15 @@
   {
     "title": "Spam Classifier",
     "description": "A Deep learning model which classifies emails as spam or ham using Tensorflow to build the model, nltk for language processing and matplotlib and seaborn for data visualization",
-    "TechStack": ["Tensorflow", "Keras", "scikit learn", "numpy", "pandas", "matplotlib", "seaborn"],
+    "TechStack": [
+      "Tensorflow",
+      "Keras",
+      "scikit learn",
+      "numpy",
+      "pandas",
+      "matplotlib",
+      "seaborn"
+    ],
     "tags": ["Machine Learning", "Deep Learning"]
   },
   {
@@ -39,21 +70,20 @@
   },
   {
     "title": "Controlling ROBOTNIK for warehouse operations.",
-    "description":"A combination of EKF and MPC was used for localization and motion control. Investigated the effect of adding more landmarks and taking range bearing measurements for the task. Tuned the prediction horizon and added the terminal weight matrix.",
-    "url":" https://drive.google.com/file/d/1i4AA2GC4oQ6hYBFpBi_eNcEsQC-Zytw0/view?usp=sharing",
+    "description": "A combination of EKF and MPC was used for localization and motion control. Investigated the effect of adding more landmarks and taking range bearing measurements for the task. Tuned the prediction horizon and added the terminal weight matrix.",
+    "url": " https://drive.google.com/file/d/1i4AA2GC4oQ6hYBFpBi_eNcEsQC-Zytw0/view?usp=sharing",
     "tags": ["Robotics"]
   },
   {
     "title": "ML model to control Panda manipulator",
     "description": "Part of a coursework at UCL dealing with comparison of neural networks and random forest algorithms to learn and repeat robot trajectories.",
     "url": "https://drive.google.com/file/d/1OCeOaw-d3JfKAxYrxyKhDg8zkNvhoD73/view?usp=sharing",
-    "tags":["Machine Learning", "Robotics"]
+    "tags": ["Machine Learning", "Robotics"]
   },
   {
     "title": "Pick and Place using a robot arm.",
     "description": "Given a certain number of blocks and baskets, the task was to identify their colour and place the blocks in the baskets of the same colour. PCL was used for object detection and moveIt library was used for picking and placing the block using the start and goal locations.",
-    "tags":["Robotics"]
-
+    "tags": ["Robotics"]
   },
   {
     "title": "Drone trajectory planning to visit target points and avoid obstacles",

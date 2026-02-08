@@ -46,7 +46,10 @@ const renderValue = (value: string | string[]): React.ReactNode => {
             );
           }
           return (
-            <span key={idx} className="px-3 py-1 bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium">
+            <span
+              key={idx}
+              className="px-3 py-1 bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium"
+            >
               {/* {item} */}
               <MarkdownRenderer content={item} />
             </span>
@@ -69,20 +72,35 @@ const renderValue = (value: string | string[]): React.ReactNode => {
     );
   }
 
-  return <span className="text-gray-600 dark:text-gray-400 break-words text-sm"><MarkdownRenderer content={value}/></span>;
+  return (
+    <span className="text-gray-600 dark:text-gray-400 break-words text-sm">
+      <MarkdownRenderer content={value} />
+    </span>
+  );
 };
 
-export default function Card({ title, footer, metadataDict, url,institution }: CardProps) {
+export default function Card({
+  title,
+  footer,
+  metadataDict,
+  url,
+  institution,
+}: CardProps) {
   const [open, setOpen] = useState(false);
 
   // Convert metadataDict into a uniform list for rendering, excluding title, description, and url
   const metadata = metadataDict
     ? Object.entries(metadataDict)
-      .filter(([key]) => !["title","institution", "url", "logo"].includes(key.toLowerCase()))
-      .map(([key, value]) => ({
-        label: key,
-        value: Array.isArray(value) ? value : value,
-      }))
+        .filter(
+          ([key]) =>
+            !["title", "institution", "url", "logo"].includes(
+              key.toLowerCase(),
+            ),
+        )
+        .map(([key, value]) => ({
+          label: key,
+          value: Array.isArray(value) ? value : value,
+        }))
     : [];
 
   return (
@@ -93,7 +111,9 @@ export default function Card({ title, footer, metadataDict, url,institution }: C
         onClick={() => setOpen((prev) => !prev)}
       >
         <div className="flex-1">
-          <h3 className="text-lg font-semibold bg-gradient-to-r from-blue-600 to-blue-500 dark:from-blue-400 dark:to-blue-300 bg-clip-text text-transparent">{title}</h3>
+          <h3 className="text-lg font-semibold bg-gradient-to-r from-blue-600 to-blue-500 dark:from-blue-400 dark:to-blue-300 bg-clip-text text-transparent">
+            {title}
+          </h3>
           {institution && (
             <div className="flex items-start gap-3 mt-2">
               {metadataDict?.logo && (
@@ -115,7 +135,11 @@ export default function Card({ title, footer, metadataDict, url,institution }: C
       </div>
 
       {/* Footer (always visible) */}
-      {footer && <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">{footer}</p>}
+      {footer && (
+        <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">
+          {footer}
+        </p>
+      )}
 
       {/* URL Button */}
       {url && (
@@ -138,10 +162,8 @@ export default function Card({ title, footer, metadataDict, url,institution }: C
               key={idx}
               className="flex flex-col md:grid md:grid-cols-[8rem_1fr] gap-2"
             >
-
               <span className="font-medium text-gray-700 dark:text-gray-300 capitalize text-sm">
-
-                {label.replace(/([A-Z])/g, ' $1').trim()}:
+                {label.replace(/([A-Z])/g, " $1").trim()}:
               </span>
               <div className="flex-1">{renderValue(value as string)}</div>
             </div>

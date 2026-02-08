@@ -25,7 +25,7 @@ export default function ProjectsFilter({
 }: ProjectsFilterProps) {
   const [selectedTags, setSelectedTags] = useState<Set<string>>(new Set());
   const [selectedTechStacks, setSelectedTechStacks] = useState<Set<string>>(
-    new Set()
+    new Set(),
   );
 
   // Filter projects based on selected filters
@@ -38,7 +38,7 @@ export default function ProjectsFilter({
       const hasMatchingTech =
         selectedTechStacks.size === 0 ||
         (project.TechStack || []).some((tech) =>
-          selectedTechStacks.has(tech.trim())
+          selectedTechStacks.has(tech.trim()),
         );
 
       return hasMatchingTag && hasMatchingTech;
@@ -138,7 +138,8 @@ export default function ProjectsFilter({
       {/* Results */}
       <div className="mb-6">
         <p className="text-gray-600 dark:text-gray-400 text-sm">
-          Showing <span className="font-semibold">{filteredProjects.length}</span> of{" "}
+          Showing{" "}
+          <span className="font-semibold">{filteredProjects.length}</span> of{" "}
           <span className="font-semibold">{projects.length}</span> projects
         </p>
       </div>

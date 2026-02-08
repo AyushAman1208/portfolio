@@ -26,7 +26,13 @@
     "startDate": "April 2017",
     "endDate": "March 2019",
     "description": "- Achieved an **overall percentage of 84.5%**",
-    "tags": ["Physics", "Mathematics", "Chemistry", "English", "Physical Education"],
+    "tags": [
+      "Physics",
+      "Mathematics",
+      "Chemistry",
+      "English",
+      "Physical Education"
+    ],
     "logo": ""
   }
 ]
